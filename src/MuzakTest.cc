@@ -7,5 +7,8 @@ PmEvent buffer[1];
 int main()
 {
 	TIME_START;
+	
+	Pm_initialize();
+	
 	return 0;
 }
