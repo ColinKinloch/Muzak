@@ -33,13 +33,13 @@ add_executable(MuzakTest src/MuzakTest.cc)
 target_link_libraries(MuzakTest Muzak)
 
 include(FindPkgConfig)
-pkg_search_module(PortAudio REQUIRED portaudio-2.0)
+pkg_search_module(PORTAUDIO REQUIRED portaudio-2.0)
 
 find_package(PortMidi)
 
-if(PortAudio_FOUND)
-	include_directories(${PortAudio_INCLUDE_DIR})
-	target_link_libraries(MuzakTest ${PortAudio_LIBRARIES})
+if(PORTAUDIO_FOUND)
+	include_directories(${PORTAUDIO_INCLUDE_DIR})
+	target_link_libraries(MuzakTest ${PORTAUDIO_LIBRARIES})
 endif()
 if(PORTMIDI_FOUND)
 	include_directories(${PORTMIDI_INCLUDE_DIR})
