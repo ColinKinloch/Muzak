@@ -4,15 +4,8 @@
 #ifndef MUZAK_MUZAK
 #define MUZAK_MUZAK
 
-namespace Muzak
-{
-	class Muzak
-	{
-	private:
-	public:
-		Muzak();
-		~Muzak();
-	};
-}
+#include <Muzak/Instrument.hh>
+#include <Muzak/Midi.hh>
+#include <Muzak/Mixer.hh>
 
 #endif//MUZAK_MUZAK

@@ -13,10 +13,21 @@ set(VERSION_PATCH 0)
 
 set(MUZAK_HEADERS
 	include/Muzak/Muzak.hh
+	include/Muzak/Node.hh
+	include/Muzak/Mixer.hh
+	include/Muzak/Midi.hh
+	include/Muzak/Generator.hh
+	include/Muzak/gens/Sine.hh
+	include/Muzak/Instrument.hh
 )
 set(MUZAK_SRCS
 	${MUZAK_HEADERS}
-	src/Muzak.cc
+	src/Node.cc
+	src/Mixer.cc
+	src/Midi.cc
+	src/Generator.cc
+	src/gens/Sine.cc
+	src/Instrument.cc
 )
 include_directories(include)
 
