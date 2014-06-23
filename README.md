@@ -3,7 +3,9 @@ Muzak
 
 Ill(conceived) beats on yo computer, yo!
 
-MusicTest
+Moving to LV2 API
+
+MusicTest (deprecated)
 ---------
 
 arguments:
