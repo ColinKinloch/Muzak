@@ -8,18 +8,18 @@
 
 namespace Muzak
 {
-	class Mixer: public Node
-	{
-	private:
-		float* tempBuff;
-		unsigned long tempSize;
-	public:
-		Mixer();
-		Mixer(double Rate);
-		~Mixer();
-		
-		void update(double t, long frames);
-	};
+  class Mixer: public Node
+  {
+  private:
+    float* tempBuff;
+    unsigned long tempSize;
+  public:
+    Mixer();
+    Mixer(double Rate);
+    ~Mixer();
+
+    void update(double t, long frames);
+  };
 }
 
 #endif//MUZAK_MIXER

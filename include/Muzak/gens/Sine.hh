@@ -12,22 +12,22 @@
 
 namespace Muzak
 {
-	namespace gens
-	{
-		enum class Wave{TRIANGLE, SAWTOOTH, SQUARE, NOISE, DIRTY, SINE, HALFSINE, MODSINE, SINETOOTH};
-		
-		class Sine
-		{
-		private:
-			unsigned long size;
-			float* buffer;
-		public:
-			Sine(unsigned int Length);
-			~Sine();
-			
-			float* makeFloat();
-		};
-	}
+  namespace gens
+  {
+    enum class Wave{TRIANGLE, SAWTOOTH, SQUARE, NOISE, DIRTY, SINE, HALFSINE, MODSINE, SINETOOTH};
+
+    class Sine
+    {
+    private:
+      unsigned long size;
+      float* buffer;
+    public:
+      Sine(unsigned int Length);
+      ~Sine();
+
+      float* makeFloat();
+    };
+  }
 }
 
 #endif//MUZAK_SINE

@@ -11,26 +11,26 @@
 
 namespace Muzak
 {
-	class Instrument: public Node
-	{
-	private:
-		Wave type;
-		Generator gen;
-		double tuning = 440;
-		
-		float* currBuff;
-		unsigned long currSize;
-		
-		float midiToFreq(unsigned char note);
-	public:
-		Instrument();
-		Instrument(Wave Type);
-		Instrument(Wave Type, double Rate);
-		~Instrument();
-		
-		void tune(double Frequency);
-		void update(double t, long frames);
-	};
+  class Instrument: public Node
+  {
+  private:
+    Wave type;
+    Generator gen;
+    double tuning = 440;
+
+    float* currBuff;
+    unsigned long currSize;
+
+    float midiToFreq(unsigned char note);
+  public:
+    Instrument();
+    Instrument(Wave Type);
+    Instrument(Wave Type, double Rate);
+    ~Instrument();
+
+    void tune(double Frequency);
+    void update(double t, long frames);
+  };
 }
 
 #endif//MUZAK_INSTRUMENT
